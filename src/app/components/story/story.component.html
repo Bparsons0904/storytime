@@ -1,0 +1,7 @@
+<p>
+  {{ activeStory.text }}
+</p>
+
+<div class="buttons row" *ngFor="let option of options">
+  <button (click)="loadStory(option[0])" mat-raised-button color="primary">{{ option[1] }}</button>
+</div>
